@@ -14,4 +14,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [DemoController::class, 'show'])->name('demo.show');
+Route::get('/', [DemoController::class, 'index']);
+
+Route::get('signin', [DemoController::class, 'signin']);
+
+Route::get('auth-signup', [DemoController::class, 'signup']);
+
+Route::get('pass-reset', [DemoController::class, 'passReset']);
+
+Route::get('product', [DemoController::class, 'listProduct']);
+
+Route::get('cart', [DemoController::class, 'cart']);
+
+Route::get('product-detail', [DemoController::class, 'productDetail']);
+
+Route::get('shop-checkout', [DemoController::class, 'shopCheckout']);
