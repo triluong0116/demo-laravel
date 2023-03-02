@@ -27,7 +27,7 @@
 
 <body>
 
-    <div class="auth-page-wrapper pt-5">
+    <div class="auth-page-wrapper pt-5 demo">
 
         <!-- auth page content -->
         <div class="auth-page-content">
