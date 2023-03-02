@@ -14,18 +14,42 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [DemoController::class, 'index']);
+Route::get('/', function (){
+   return view('index', ['title'=>'Product']);
+});
 
-Route::get('signin', [DemoController::class, 'signin']);
+Route::get('signin', function (){
+    return view('Admin.signin', ['title'=>'Signin']);
+});
 
-Route::get('auth-signup', [DemoController::class, 'signup']);
+Route::get('auth-signup', function (){
+    return view('Admin.signup', ['title'=>'Signup']);
+});
 
-Route::get('pass-reset', [DemoController::class, 'passReset']);
+Route::get('pass-reset', function (){
+    return view('Admin.pass-reset', ['title'=>'Forget password']);
+});
 
-Route::get('product', [DemoController::class, 'listProduct']);
+Route::get('product', function (){
+    return view('Product.list-product', ['title'=>'List product']);
+});
 
-Route::get('cart', [DemoController::class, 'cart']);
+Route::get('cart', function (){
+    return view('Product.cart', ['title'=>'Your cart']);
+});
 
-Route::get('product-detail', [DemoController::class, 'productDetail']);
+Route::get('product-detail', function (){
+    return view('Product.product-detail', ['title'=>'Product detail']);
+});
 
-Route::get('shop-checkout', [DemoController::class, 'shopCheckout']);
+Route::get('shop-checkout', function (){
+    return view('Ecommerce.shop-checkout', ['title'=>'Shop checkout']);
+});
+
+Route::get('ecommerce-order', function (){
+    return view('Ecommerce.order', ['title'=>'Order list']);
+});
+
+Route::get('ecommerce-order-detail', function (){
+    return view('Ecommerce.order-detail', ['title'=>'Order detail']);
+});

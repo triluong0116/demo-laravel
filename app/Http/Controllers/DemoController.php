@@ -52,4 +52,12 @@ class DemoController extends Controller
     {
         return $this->demoService->shopCheckout();
     }
+    public function order()
+    {
+        return $this->demoService->order();
+    }
+    public function orderDetail()
+    {
+        return $this->demoService->orderDetail();
+    }
 }

@@ -5,7 +5,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Reset Password</title>
+    <title>{{ $title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -36,7 +36,7 @@
                     <div class="col-lg-12">
                         <div class="text-center mt-sm-5 mb-4 text-white-50">
                             <div>
-                                <a href="index.html" class="d-inline-block auth-logo">
+                                <a href="{{'/'}}" class="d-inline-block auth-logo">
                                     <img src="assets/images/logo-light.png" alt="" height="20">
                                 </a>
                             </div>
@@ -80,7 +80,7 @@
                         <!-- end card -->
 
                         <div class="mt-4 text-center">
-                            <p class="mb-0">Wait, I remember my password... <a href="auth-signin-basic.html" class="fw-semibold text-primary text-decoration-underline"> Click here </a> </p>
+                            <p class="mb-0">Wait, I remember my password... <a href="{{'signin'}}" class="fw-semibold text-primary text-decoration-underline"> Click here </a> </p>
                         </div>
 
                     </div>

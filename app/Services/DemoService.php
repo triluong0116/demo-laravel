@@ -43,6 +43,14 @@ class DemoService
     }
     public function shopCheckout()
     {
-        return view('Product.shop-checkout');
+        return view('Ecommerce.shop-checkout');
+    }
+    public function order()
+    {
+        return view('Ecommerce.order');
+    }
+    public function orderDetail()
+    {
+        return view('Ecommerce.order-detail');
     }
 }

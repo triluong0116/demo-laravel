@@ -5,7 +5,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Product Details | Velzon - Admin & Dashboard Template</title>
+    <title>{{ $title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -83,8 +83,8 @@
                                 </div>
 
                                 <div class="dropdown-item bg-transparent text-wrap">
-                                    <a href="index.html" class="btn btn-soft-primary btn-sm btn-rounded">how to setup <i class="mdi mdi-magnify ms-1"></i></a>
-                                    <a href="index.html" class="btn btn-soft-primary btn-sm btn-rounded">buttons <i class="mdi mdi-magnify ms-1"></i></a>
+                                    <a href="{{'/'}}" class="btn btn-soft-primary btn-sm btn-rounded">how to setup <i class="mdi mdi-magnify ms-1"></i></a>
+                                    <a href="{{'/'}}" class="btn btn-soft-primary btn-sm btn-rounded">buttons <i class="mdi mdi-magnify ms-1"></i></a>
                                 </div>
                                 <!-- item-->
                                 <div class="dropdown-header mt-2">
@@ -431,7 +431,7 @@
                                     </div>
                                 </div>
 
-                                <a href="apps-ecommerce-checkout.html" class="btn btn-success text-center w-100">
+                                <a href="{{'shop-checkout'}}" class="btn btn-success text-center w-100">
                                     Checkout
                                 </a>
                             </div>
@@ -814,7 +814,7 @@
                                     <a href="dashboard-crm.html" class="nav-link" data-key="t-crm"> CRM </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="index.html" class="nav-link" data-key="t-ecommerce"> Ecommerce </a>
+                                    <a href="{{'/'}}" class="nav-link" data-key="t-ecommerce"> Ecommerce </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="dashboard-crypto.html" class="nav-link" data-key="t-crypto"> Crypto </a>
@@ -877,20 +877,20 @@
                                     <div class="collapse menu-dropdown" id="sidebarEcommerce">
                                         <ul class="nav nav-sm flex-column">
                                             <li class="nav-item">
-                                                <a href="apps-ecommerce-products.html" class="nav-link" data-key="t-products"> Products </a>
+                                                <a href="{{'/'}}" class="nav-link" data-key="t-products"> Products </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a href="apps-ecommerce-product-details.html" class="nav-link" data-key="t-product-Details"> Product Details </a>
+                                                <a href="{{'product-detail'}}" class="nav-link" data-key="t-product-Details"> Product Details </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a href="apps-ecommerce-add-product.html" class="nav-link" data-key="t-create-product"> Create Product </a>
+                                                <a href="{{'/'}}" class="nav-link" data-key="t-create-product"> Create Product </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a href="apps-ecommerce-orders.html" class="nav-link" data-key="t-orders">
+                                                <a href="{{'ecommerce-order'}}" class="nav-link" data-key="t-orders">
                                                     Orders </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a href="apps-ecommerce-order-details.html" class="nav-link" data-key="t-order-details"> Order Details </a>
+                                                <a href="{{'ecommerce-order-detail'}}" class="nav-link" data-key="t-order-details"> Order Details </a>
                                             </li>
                                             <li class="nav-item">
                                                 <a href="apps-ecommerce-customers.html" class="nav-link" data-key="t-customers"> Customers </a>
@@ -899,7 +899,7 @@
                                                 <a href="apps-ecommerce-cart.html" class="nav-link" data-key="t-shopping-cart"> Shopping Cart </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a href="apps-ecommerce-checkout.html" class="nav-link" data-key="t-checkout"> Checkout </a>
+                                                <a href="{{'shop-checkout'}}" class="nav-link" data-key="t-checkout"> Checkout </a>
                                             </li>
                                             <li class="nav-item">
                                                 <a href="apps-ecommerce-sellers.html" class="nav-link" data-key="t-sellers">
